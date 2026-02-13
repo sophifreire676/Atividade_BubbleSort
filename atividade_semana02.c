@@ -4,7 +4,7 @@
 
 void preencherVetorDecrescente(int *vetor, int tamanho) {
     for (int i = 0; i < tamanho; i++) {
-        vetor[i] = tamanho - i;  // Ex: 100, 99, 98, ..., 1
+        vetor[i] = tamanho - i;
     }
 }
 
@@ -21,7 +21,7 @@ void bubbleSort(int *vetor, int tamanho, int *comparacoes, int *movimentacoes) {
                 vetor[j] = vetor[j + 1];
                 vetor[j + 1] = temp;
                 
-                *movimentacoes += 3; // 3 atribuições na troca
+                *movimentacoes += 3;
             }
         }
     }
@@ -47,7 +47,7 @@ void selectionSort(int *vetor, int tamanho, int *comparacoes, int *movimentacoes
             vetor[i] = vetor[menor];
             vetor[menor] = temp;
             
-            *movimentacoes += 3; // 3 atribuições na troca
+            *movimentacoes += 3;
         }
     }
 }
